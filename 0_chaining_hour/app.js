@@ -8,7 +8,7 @@ var hour = new Date().getHours();
 const isDayTime = hour > 6 && hour < 20;
 
 app.get(
-  '/hello',
+  '/',
   // middleware #1
   (req, res, next) => {
     if (isDayTime) {
